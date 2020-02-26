@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting up  reports ]]>
+    </line>
+    <line>
+      <![CDATA[Setting up  reports-done ]]>
+    </line>
+    <line>
+      <![CDATA[Browser started ]]>
+    </line>
+    <line>
+      <![CDATA[Application is up and running ]]>
+    </line>
+    <line>
+      <![CDATA[Taking the screenshot ]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed >> Reports generated]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2020-02-18T16:27:40Z" name="Default suite" finished-at="2020-02-18T16:28:00Z" duration-ms="20001">
+    <groups>
+    </groups>
+    <test started-at="2020-02-18T16:27:40Z" name="Default test" finished-at="2020-02-18T16:28:00Z" duration-ms="20001">
+      <class name="com.automation.testcases.LoginTest">
+        <test-method is-config="true" signature="setupsuite()[pri:0, instance:com.automation.testcases.LoginTest@2df3b89c]" started-at="2020-02-18T21:57:39Z" name="setupsuite" finished-at="2020-02-18T21:57:40Z" duration-ms="526" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up  reports ]]>
+            </line>
+            <line>
+              <![CDATA[Setting up  reports-done ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setupsuite -->
+        <test-method is-config="true" signature="startup()[pri:0, instance:com.automation.testcases.LoginTest@2df3b89c]" started-at="2020-02-18T21:57:40Z" name="startup" finished-at="2020-02-18T21:57:56Z" duration-ms="15930" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser started ]]>
+            </line>
+            <line>
+              <![CDATA[Application is up and running ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="loginTest()[pri:0, instance:com.automation.testcases.LoginTest@2df3b89c]" started-at="2020-02-18T21:57:56Z" name="loginTest" finished-at="2020-02-18T21:57:58Z" duration-ms="2287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="screenshot(org.testng.ITestResult)[pri:0, instance:com.automation.testcases.LoginTest@2df3b89c]" started-at="2020-02-18T21:57:58Z" name="screenshot" finished-at="2020-02-18T21:57:59Z" duration-ms="1087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:0, instance:com.automation.testcases.LoginTest@2df3b89c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Taking the screenshot ]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed >> Reports generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.automation.testcases.LoginTest@2df3b89c]" started-at="2020-02-18T21:57:59Z" name="teardown" finished-at="2020-02-18T21:58:00Z" duration-ms="687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.automation.testcases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
