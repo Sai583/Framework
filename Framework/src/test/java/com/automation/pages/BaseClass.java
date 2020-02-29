@@ -10,6 +10,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.automation.utilites.Browserfactory;
 import com.automation.utilites.ConfigDataProvider;
@@ -40,11 +41,15 @@ public class BaseClass {
 		 Reporter.log("Setting up  reports-done ", true);
 	}
 	
+	@Parameters({"browser","urltobetested"})
 	@BeforeClass
-	public void startup()
+	public void startup(String browser,String url)
 	{
 		Reporter.log("Browser started ", true);
-		ldriver=	Browserfactory.Crosbrowser(ldriver,config.getBrowser(),config.getStaggingUrl());
+		//ldriver=	Browserfactory.Crosbrowser(ldriver,config.getBrowser(),config.getStaggingUrl());
+		
+		ldriver=	Browserfactory.Crosbrowser(ldriver,browser,url);
+		
 		Reporter.log("Application is up and running ", true);
 	}
 	

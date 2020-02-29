@@ -6,7 +6,7 @@
   <description>Creating the sample framework</description>
   
   <properties>
-<suiteXmlFile>testng.xml</suiteXmlFile>
+<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
 <skipTest>false</skipTest>
  </properties>
  
@@ -70,6 +70,11 @@
 <suiteXmlFiles>
 <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 </suiteXmlFiles>
+
+<systemPropertyVariables>
+<executionbrowser>${browser}</executionbrowser>
+<appurl>${urltobetested}</appurl>
+</systemPropertyVariables>
  
 </configuration>
 </plugin>
